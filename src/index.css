@@ -1,0 +1,97 @@
+.prompt{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+    padding:5% 5%;
+    width: fit-content;
+    box-shadow:0px 8px 24px black ;
+}
+.prompt .lead{
+    font-size: xx-large;
+}
+.prompt>div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.prompt>div button{
+    width:100px;
+}
+.parent-prompt{
+    display: flex;
+    width: 100%;
+    height: 98vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-checked{
+    color:transparent;
+    background:url("/tick.svg");
+    background-repeat: no-repeat;
+    background-size: 50% 70%;
+    background-position: center;
+}
+
+.empty-field *::placeholder{
+    color: red;
+}
+.alerts{
+
+    min-width: 200px;
+    width: 50%;
+    max-width: 380px;
+    right: 0;
+    height: 80vh;
+    position: fixed;
+    top: 15vh;
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+.alert{
+    padding: 2% 5%;
+    animation: chammakchaollo 300ms 30ms linear forwards;
+    background-color: #308264;
+    border: var(--primary);
+}
+.alert .lead{
+    font-size: large;
+}
+.alert button{
+    border:none;
+    border-radius: 100px;
+    display: flex;
+    width:30px;
+    height: 30px;
+    background-color: crimson;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+.alert *{
+    color: white;
+    margin: 0;
+}
+.alert{
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@keyframes chammakchallo{
+    0%{
+        position: relative;
+        left: 200%;
+    }
+    100%{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    
+}

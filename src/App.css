@@ -1,0 +1,174 @@
+#root{
+  --primary: #426b5c;
+  --primary-2: #3c574d;
+}
+main{
+  width: 98vw;
+}
+.form-builder{
+  width: 60vw;
+}
+input[type="text"],input[type="password"],input[type="email"]{
+  background-color: transparent;
+  outline:  none !important;
+  border:  none;
+  color: black;
+}
+*{
+  outline: none;
+}
+input[type="text"]:focus, div[contenteditable]:focus,input[type="password"]:focus{
+  border-bottom: 1px solid black;
+}
+.btn.pbt[disable]{
+  background-color: #495450;
+}
+.bold-td *{
+  font-weight: bold;
+  font-size: 110%;
+}
+#desc{
+  background: transparent;
+  resize: none;
+  border: none;
+  height: 50px;
+  font-size: 20px;
+}
+*:not(button){
+  color: black;
+}
+#desc,#title{
+  width: 100%;
+}
+.inputs::placeholder{
+font-weight: light;
+color: gray;
+}
+
+
+
+
+.strip{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left:2vw;
+}
+
+.pbt{
+  background-color: var(--primary);
+  font-weight: bold;
+  height: 50px;
+}
+label.pbt{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.strip .btn{
+  margin: 0 4px;
+}
+
+.logo,.logo *,.logo:active,.logo *:hover{
+  font-size: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.node input[type="text"],.node input[type="email"],.node label[contenteditable],.node-border{
+  border-bottom: 1px solid gray;
+  width: 100%;
+
+}
+
+.sub-wrapper{
+  display: flex;
+  align-items: center;
+}
+.sub-wrapper input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  background: white;
+  accent-color: white;
+  border-radius: 0px;
+  margin-right: 10px;
+  color:white;
+}
+
+.kit{
+  justify-content: center;
+  align-items: center;
+  z-index:100;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  bottom: 10px;
+
+}
+.kit button{
+  height: 50px;
+  background-color: var(--primary);
+font-weight: bold;
+}
+.kit button:first-of-type,.controller label:first-of-type{
+  border-top-left-radius:  30px;
+  border-bottom-left-radius:  30px;
+}
+.kit button:last-of-type,.controller label:last-of-type{
+  border-top-right-radius: 30px;
+  border-bottom-right-radius:  30px;
+}
+
+.kit button:hover,label.pbt:hover{
+  background-color: var(--primary-2);
+}
+
+#root{
+  min-height: 100vh;
+  padding-top: 2.5%;
+}
+div.field-container{
+  margin-bottom: 50px;
+}
+
+.btn-remove{
+  aspect-ratio: 1/1;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 30px;
+  border-radius: 100px;
+}
+
+.form-label{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.btn-add{
+  border-radius: 100px !important;
+}
+.t-primary{
+  color: var(--primary);
+}
+
+button{
+  color: white;
+}
+
+.shaded{
+  width: 100vw;
+  padding-top: 2.5vh;
+  padding-bottom: 2vh;
+  padding-right: 2vw;
+  box-shadow: 0px 3px 10px black;
+}
+#root:has(.shaded){
+  padding-top: 0;
+}

@@ -1,0 +1,15 @@
+{
+  "title": "SMIU",
+  "desc": "Fuck u",
+  "questions": [
+    { "question": "Why u applies", "mode": "on", "type": "input" },
+    { "question": "this aint necessary", "type": "checkbox" },
+    {
+      "question": "Field",
+      "options": ["SE", "CS", "Library"],
+      "mode": "on",
+      "type": "options"
+    },
+    { "question": "Prove you're a human", "mode": "on", "type": "descriptive" }
+  ]
+}

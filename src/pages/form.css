@@ -1,0 +1,11 @@
+.output-wrapper{
+
+    display: flex;
+    align-items: center;
+}
+.empty-field::placeholder{
+    color: red;
+}
+p.empty-field {
+    color: red;
+}

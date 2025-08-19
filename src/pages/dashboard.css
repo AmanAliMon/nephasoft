@@ -1,0 +1,9 @@
+#root{
+    padding-top: 0vh !important;
+}
+.strip{
+    padding: 3vh;
+}
+.table{
+    overflow-x: auto;
+}
